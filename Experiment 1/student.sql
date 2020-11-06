@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS mydb;
+USE mydb;
+CREATE TABLE student(sno INT NOT NULL,name VARCHAR(50) NOT NULL,marks INT NOT NULL,dept CHAR(20) NOT NULL,PRIMARY KEY(sno));
+INSERT INTO student VALUES(1,'Ravi',25,"CS");
+INSERT INTO student VALUES(2,'Ajay',37,"EC");
+INSERT INTO student VALUES(3,"Raj",43,"CS");
+INSERT INTO student VALUES(4,"Preeti",30,"EE");
+SELECT * FROM student;
+ALTER TABLE student ADD COLUMN age INT;
+ALTER TABLE student MODIFY COLUMN dept VARCHAR(50);
+ALTER TABLE student DROP COLUMN marks;
+ALTER TABLE student RENAME students;
+DELETE FROM students;
+SELECT * FROM students;
+DROP TABLE students;
+
+
+
+
