@@ -1,0 +1,9 @@
+USE mydb;
+CREATE TABLE IF NOT EXISTS Employee(Code CHAR(4) NOT NULL,Name CHAR(10) NOT NULL,Designation CHAR(30) NOT NULL,DOB DATE NOT NULL,Salary NUMERIC NOT NULL,PRIMARY KEY(Code));
+INSERT INTO Employee VALUES('e1','Rajesh','Peon','1986-09-12',60000);
+INSERT INTO Employee VALUES('e2','Ravi','Clerk','2016-08-14',30000);
+SELECT * FROM Employee;
+UPDATE Employee SET Salary=70000 WHERE Code='e1';
+DELETE FROM Employee WHERE Code='e2';
+SELECT * FROM Employee;
+
